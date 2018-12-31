@@ -133,8 +133,8 @@ See the [Sample section](#sample) for a sample with a more detailed explanation 
 
 - Windows platform support is now disabled in this plugin version, with CRYPTO provider (libTomCrypt) completely removed (ref: [litehelpers / Cordova-sqlcipher-adapter#63](https://github.com/litehelpers/Cordova-sqlcipher-adapter/issues/63)). For future consideration: enable Windows build again with encryption using a recent build of the OpenSSL crypto library ref: [litehelpers/Cordova-sqlcipher-adapter#30](https://github.com/litehelpers/Cordova-sqlcipher-adapter/issues/30)
 - Alpha version:
-  - SQLCipher `3.4.2` with FTS3/FTS5 update from SQLite 3.26.0 (security update) for iOS/macOS from <https://github.com/brodybits/sqlcipher/tree/3.4.x%2Bfts-update> (`3.4.x+fts-update` branch)
-  - SQLCipher `3.5.9` for Android, with FTS3/FTS5 update from SQLite 3.26.0 (security update) in custom build from <https://github.com/brodybits/android-database-sqlcipher/tree/3.5.x%2Bfts-update-custom-jars> (`3.5.x+fts-update-custom-jars` branch)
+  - SQLCipher `4.0.1` (major update) for iOS/macOS
+  - SQLCipher `4.0.1` for Android, in custom build from <https://github.com/brodybits/android-database-sqlcipher/tree/4.0.x%2Bcustom-jar-build> (`4.0.x+custom-jar-build` branch)
   - `SQLITE_DEFAULT_PAGE_SIZE=1024` and `SQLITE_DEFAULT_CACHE_SIZE=2000` to avoid "potentially distruptive change(s)" from SQLite 3.12.0 in unencrypted databases ref: <http://sqlite.org/pgszchng2016.html> - iOS/macOS, ~~Windows~~ only
   - with OpenSSL libcrypto for Android
   - using CommonCrypto framework for iOS/macOS
@@ -160,7 +160,7 @@ See the [Sample section](#sample) for a sample with a more detailed explanation 
   - `SQLITE_OMIT_DECLTYPE` (iOS/macOS/Windows)
   - ~~`SQLITE_OMIT_DEPRECATED`~~ (FOR FUTURE CONSIDERATION)
   - `SQLITE_OMIT_PROGRESS_CALLBACK` (iOS/macOS/Windows)
-  - `SQLITE_OMIT_SHARED_CACHE` (iOS/macOS/Windows)
+  - `SQLITE_OMIT_SHARED_CACHE`
   - `SQLITE_ENABLE_LOAD_EXTENSION` (Android only)
   - `SQLITE_OMIT_LOAD_EXTENSION` (iOS/macOS/Windows)
   - `SQLITE_ENABLE_COLUMN_METADATA` (Android only)
