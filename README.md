@@ -141,7 +141,7 @@ See the [Sample section](#sample) for a sample with a more detailed explanation 
   - NO ENCRYPTION ENABLED (completely removed) for Windows
   - for future consideration: embed OpenSSL libcrypto for all target platforms
 - This plugin is NOT supported by PhoneGap Developer App or PhoneGap Desktop App.
-- A recent version of the Cordova CLI (such as `6.5.0` / `7.1.0` / `8.0.0`) is recommended. Cordova versions older than `6.0.0` are missing the `cordova-ios@4.0.0` security fixes. In addition it may be needed to use `cordova prepare` in case of cordova-ios older than `4.3.0` (Cordova CLI `6.4.0`).
+- A recent version of the Cordova CLI (such as `6.5.0` / `7.1.0` / `8.1.x`) is recommended. Cordova versions older than `6.0.0` are missing the `cordova-ios@4.0.0` security fixes. In addition it may be needed to use `cordova prepare` in case of cordova-ios older than `4.3.0` (Cordova CLI `6.4.0`).
 - SQLCipher build settings used:
   - `SQLITE_HAS_CODEC` (no longer enabled in Windows SQLite3 library build)
   - `SQLITE_SOUNDEX` (Android only)
