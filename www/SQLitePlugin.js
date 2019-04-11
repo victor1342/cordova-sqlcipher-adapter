@@ -376,7 +376,7 @@
   };
 
   SQLitePluginTransaction.prototype.handleStatementSuccess = function(handler, response) {
-    var payload, rows;
+    /*var payload, rows;
     if (!handler) {
       return;
     }
@@ -388,6 +388,16 @@
         },
         length: rows.length
       },
+      rowsAffected: response.rowsAffected || 0,
+      insertId: response.insertId || void 0
+    };
+    handler(this, payload);*/
+    var payload;
+    if (!handler) {
+      return;
+    }
+    payload = {
+      rows: response.rows || [],
       rowsAffected: response.rowsAffected || 0,
       insertId: response.insertId || void 0
     };
